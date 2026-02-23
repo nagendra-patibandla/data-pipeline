@@ -1,8 +1,8 @@
-# Verian Data Engineer Technical Assessment
+# Data Engineer Technical Assessment
 
 ## 1. Task description
 
-Verian provided a respondent data export and a matching schema and asked to:
+Provided a respondent data export and a matching schema and asked to:
 
 - Read the raw respondent data from `responses_data.json`.
 - Use the metadata in `responses_schema.json` to understand variables, types, and categorical options.
