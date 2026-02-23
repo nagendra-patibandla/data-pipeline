@@ -59,3 +59,46 @@ Technical Test/
   pipeline.py                # main pipeline implementation
   test_pipeline.py           # unit tests for core logic
   README.md
+```
+
+---
+
+## 4. How to Run the Pipeline
+
+### Prerequisites
+
+- Python 3.9+
+
+Install dependencies:
+
+```bash
+python3 -m pip install pandas pyreadstat pytest
+```
+
+### From the project root:
+
+```bash
+python3 pipeline.py
+```
+
+The script expects input files in:
+
+```
+Testdata2024/
+  responses_data.json
+  responses_schema.json
+```
+
+On success, the script will print Number of variables, DataFrame shape, Column dtypes and Status distribution. And generate:
+
+```
+Testdata2024/responses_data.sav
+```
+
+### Running the Tests
+
+Unit tests are implemented in `test_pipeline.py`.
+
+```bash
+python3 -m pytest -q
+```
